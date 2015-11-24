@@ -8,7 +8,7 @@ set :public_folder, './app/'
 get '/' do
 	@title = "M8 Pix"
 
-	@posts = Post.all
+	@posts = Post.all.order(:id)
 
 	erb :home
 end
