@@ -1,4 +1,7 @@
 This is a *README*
 
-
-type "rackup" to run server
+- to update gems = bundle install
+- to create migration = rake db:create_migration NAME=
+- to run migrations = rake db:migrate
+- type "rackup" to run server
+- to kill server = control + c

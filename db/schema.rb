@@ -11,10 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124094714) do
+ActiveRecord::Schema.define(version: 20160223084028) do
 
   create_table "posts", force: :cascade do |t|
-    t.string "img_url"
+    t.string   "img_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

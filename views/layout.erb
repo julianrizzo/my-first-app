@@ -10,10 +10,21 @@
 <body>
 
 	<nav>
-		mate pix
+		<a class="logo" href="/">
+			<i class="diamond icon"></i>
+			mate pix
+		</a>
+
+		<a class="upload" href="/post/new">
+			<i class="upload icon"></i>
+			Upload
+		</a>
+
 	</nav>
 
-	<%= yield %>
+	<article>
+		<%= yield %>
+	</article>
 
 </body>
 </html>

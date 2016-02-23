@@ -1,0 +1,11 @@
+
+<strong>
+	<%= @error.nil? ? "" : @error.to_s %>
+</strong>
+
+<form action="/post/create"  method="post">
+	<label for="img-url">Image Url</label>
+	<input type="text" id="img-url" name="img_url" />
+
+	<button type="submit">Upload</button>
+</form>
