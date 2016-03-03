@@ -8,14 +8,10 @@
 	<div class="image">
 		<img src="<%= post.img_url %>">
 	</div>
-	<div class="content">
-		<span class="right floated">
-			<i class="heart outline like icon"></i>
-			17 likes
-		</span>
-		<i class="comment icon"></i>
-		3 comments
-	</div>
+
+	<!-- needs to be on one line cause of white space shittiness -->
+	<div class="content pre"><%= post.description %></div>
+	
 	<div class="extra content">
 		<div class="ui large transparent left icon input">
 			<i class="heart outline icon"></i>

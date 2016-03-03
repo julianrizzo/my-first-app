@@ -3,9 +3,30 @@
 	<%= @error.nil? ? "" : @error.to_s %>
 </strong>
 
-<form action="/post/create"  method="post">
-	<label for="img-url">Image Url</label>
-	<input type="text" id="img-url" name="img_url" />
+<form class="ui form ui-upload-image-form" action="/post/create"  method="post">
+	<div class="field">
+		<label for="img-url">Image Url</label>
+		<input type="text" id="img-url" name="img_url" placeholder="http://..." />
+	</div>
+	<div class="field">
+		<label for="desc">Description</label>
+		<textarea id="desc" name="description" rows="3"></textarea>
+	</div>
 
-	<button type="submit">Upload</button>
+	<div class="ui animated primary button ui-submit-button" tabindex="0">
+		<div class="visible content">Upload</div>
+		<div class="hidden content">
+			<i class="right upload icon"></i>
+		</div>
+	</div>
 </form>
+
+
+<script type="text/javascript">
+
+var $form = $('.ui-upload-image-form');
+$form.find('.ui-submit-button').click(function() {
+	$form.submit();
+});
+
+</script>

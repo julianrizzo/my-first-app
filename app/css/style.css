@@ -3,6 +3,10 @@ body {
 	color: #5D5D5D;
 }
 
+.pre {
+	white-space: pre-wrap;
+}
+
 nav {
 	position: fixed;
 	top: 0;
@@ -38,18 +42,10 @@ article {
 	padding: 30px;
 }
 
-label {
-	margin-right: 20px;
+.fields {
+	list-style: none;
 }
 
-input[type="text"] {
-	border-radius: 3px;
-	border: 1px solid #5d5d5d;
-	width: 300px;
-	padding: 5px;
-}
-
-button {
-	display: block;
+.fields > li {
 	margin: 10px 0;
 }

@@ -24,12 +24,13 @@ end
 
 post '/post/create' do
 	img_url = params[:img_url]
+	desc = params[:description]
 
 	if img_url.empty?
 		@error = "Please provide a valid Url."
 		erb :"posts/new"
 	else
-		Post.create(img_url: img_url)
+		Post.create(img_url: img_url, description: desc)
 		redirect '/'
 	end
 end
